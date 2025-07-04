@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog - BSMF</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+                            <div class="nav-logo">
+                    <a href="index.html">
+                        <img src="logo.webp" alt="BSMF Logo" class="logo">
+                        <span class="logo-text">BSMF</span>
+                    </a>
+                </div>
+            <ul class="nav-menu">
+                <li><a href="index.html" class="nav-link">Home</a></li>
+                <li><a href="missions.html" class="nav-link">Missions</a></li>
+                <li><a href="gallery.html" class="nav-link">Gallery</a></li>
+                <li><a href="tactics.html" class="nav-link">Tactics</a></li>
+                <li><a href="blog.html" class="nav-link active">Blog</a></li>
+                <li><a href="index.html#contact" class="nav-link">Contact</a></li>
+            </ul>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="page-hero">
+        <div class="container">
+            <h1 class="page-title">Blog & News</h1>
+            <p class="page-subtitle">Latest Updates & Team News</p>
+        </div>
+    </section>
+
+    <!-- Featured Article -->
+    <section class="featured-article">
+        <div class="container">
+            <article class="featured-post">
+                <div class="featured-image">
+                    <i class="fas fa-newspaper"></i>
+                </div>
+                <div class="featured-content">
+                    <div class="post-meta">
+                        <span class="post-date">January 15, 2024</span>
+                        <span class="post-category">Team News</span>
+                    </div>
+                    <h2>Welcome to the New BSMF Website</h2>
+                    <p class="featured-excerpt">
+                        We're excited to launch our new website! This platform will serve as the central hub for all BSMF operations, 
+                        providing detailed information about our missions, tactics, and community events. From our humble beginnings 
+                        as "Back Stabbers" dealing with friendly fire incidents, we've evolved into a disciplined tactical force 
+                        focused on realistic military simulation.
+                    </p>
+                    <div class="featured-tags">
+                        <span class="tag">Website</span>
+                        <span class="tag">Team</span>
+                        <span class="tag">News</span>
+                    </div>
+                    <a href="#" class="read-more-btn">Read Full Article</a>
+                </div>
+            </article>
+        </div>
+    </section>
+
+    <!-- Blog Categories -->
+    <section class="blog-categories">
+        <div class="container">
+            <div class="category-filters">
+                <button class="filter-btn active" data-filter="all">All Posts</button>
+                <button class="filter-btn" data-filter="news">Team News</button>
+                <button class="filter-btn" data-filter="missions">Mission Reports</button>
+                <button class="filter-btn" data-filter="tactics">Tactical Guides</button>
+                <button class="filter-btn" data-filter="events">Event Updates</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Blog Grid -->
+    <section class="blog-main">
+        <div class="container">
+            <div class="blog-grid">
+                <article class="blog-card" data-category="missions">
+                    <div class="blog-image">
+                        <i class="fas fa-map"></i>
+                    </div>
+                    <div class="blog-content">
+                        <div class="post-meta">
+                            <span class="post-date">January 12, 2024</span>
+                            <span class="post-category">Mission Report</span>
+                        </div>
+                        <h3>Urban Night Raid Success</h3>
+                        <p>Our latest urban operation demonstrated exceptional team coordination and tactical precision. 
+                        The night raid through downtown district showcased our CQB capabilities and stealth movement techniques.</p>
+                        <div class="blog-tags">
+                            <span class="tag">Urban</span>
+                            <span class="tag">Night</span>
+                            <span class="tag">CQB</span>
+                        </div>
+                        <a href="#" class="read-more">Read More</a>
+                    </div>
+                </article>
+
+                <article class="blog-card" data-category="tactics">
+                    <div class="blog-image">
+                        <i class="fas fa-crosshairs"></i>
+                    </div>
+                    <div class="blog-content">
+                        <div class="post-meta">
+                            <span class="post-date">January 10, 2024</span>
+                            <span class="post-category">Tactical Guide</span>
+                        </div>
+                        <h3>Advanced Sniper Techniques</h3>
+                        <p>Mastering long-range engagement requires more than just good aim. This comprehensive guide covers 
+                        wind reading, range estimation, and position selection for optimal sniper operations.</p>
+                        <div class="blog-tags">
+                            <span class="tag">Sniper</span>
+                            <span class="tag">Long Range</span>
+                            <span class="tag">Training</span>
+                        </div>
+                        <a href="#" class="read-more">Read More</a>
+                    </div>
+                </article>
+
+                <article class="blog-card" data-category="events">
+                    <div class="blog-image">
+                        <i class="fas fa-calendar-alt"></i>
+                    </div>
+                    <div class="blog-content">
+                        <div class="post-meta">
+                            <span class="post-date">January 8, 2024</span>
+                            <span class="post-category">Event Update</span>
+                        </div>
+                        <h3>Upcoming Competition Event</h3>
+                        <p>Get ready for our first tactical competition of 2024! This event will test accuracy, speed, 
+                        and team coordination across multiple challenging scenarios. Registration opens next week.</p>
+                        <div class="blog-tags">
+                            <span class="tag">Competition</span>
+                            <span class="tag">Event</span>
+                            <span class="tag">Registration</span>
+                        </div>
+                        <a href="#" class="read-more">Read More</a>
+                    </div>
+                </article>
+
+                <article class="blog-card" data-category="news">
+                    <div class="blog-image">
+                        <i class="fas fa-users"></i>
+                    </div>
+                    <div class="blog-content">
+                        <div class="post-meta">
+                            <span class="post-date">January 5, 2024</span>
+                            <span class="post-category">Team News</span>
+                        </div>
+                        <h3>New Team Members Welcome</h3>
+                        <p>We're excited to welcome several new operators to the BSMF team. These recruits bring diverse 
+                        skills and experience that will strengthen our tactical capabilities and community.</p>
+                        <div class="blog-tags">
+                            <span class="tag">Recruitment</span>
+                            <span class="tag">Team</span>
+                            <span class="tag">Welcome</span>
+                        </div>
+                        <a href="#" class="read-more">Read More</a>
+                    </div>
+                </article>
+
+                <article class="blog-card" data-category="tactics">
+                    <div class="blog-image">
+                        <i class="fas fa-door-open"></i>
+                    </div>
+                    <div class="blog-content">
+                        <div class="post-meta">
+                            <span class="post-date">January 3, 2024</span>
+                            <span class="post-category">Tactical Guide</span>
+                        </div>
+                        <h3>CQB Room Clearing Fundamentals</h3>
+                        <p>Close Quarters Battle requires precise techniques and coordination. This guide covers the essential 
+                        room clearing methods including slice the pie, cross coverage, and button hook entry.</p>
+                        <div class="blog-tags">
+                            <span class="tag">CQB</span>
+                            <span class="tag">Room Clearing</span>
+                            <span class="tag">Training</span>
+                        </div>
+                        <a href="#" class="read-more">Read More</a>
+                    </div>
+                </article>
+
+                <article class="blog-card" data-category="missions">
+                    <div class="blog-image">
+                        <i class="fas fa-mountain"></i>
+                    </div>
+                    <div class="blog-content">
+                        <div class="post-meta">
+                            <span class="post-date">December 30, 2023</span>
+                            <span class="post-category">Mission Report</span>
+                        </div>
+                        <h3>Mountain Reconnaissance Mission</h3>
+                        <p>Our high-altitude reconnaissance operation tested our stealth capabilities and long-range engagement 
+                        skills. The mission highlighted the importance of environmental adaptation and patience.</p>
+                        <div class="blog-tags">
+                            <span class="tag">Recon</span>
+                            <span class="tag">Mountain</span>
+                            <span class="tag">Stealth</span>
+                        </div>
+                        <a href="#" class="read-more">Read More</a>
+                    </div>
+                </article>
+
+                <article class="blog-card" data-category="events">
+                    <div class="blog-image">
+                        <i class="fas fa-trophy"></i>
+                    </div>
+                    <div class="blog-content">
+                        <div class="post-meta">
+                            <span class="post-date">December 28, 2023</span>
+                            <span class="post-category">Event Update</span>
+                        </div>
+                        <h3>Year-End Competition Results</h3>
+                        <p>Our final competition of 2023 was a huge success! Congratulations to all participants and winners. 
+                        The event showcased incredible skill and sportsmanship across all categories.</p>
+                        <div class="blog-tags">
+                            <span class="tag">Competition</span>
+                            <span class="tag">Results</span>
+                            <span class="tag">2023</span>
+                        </div>
+                        <a href="#" class="read-more">Read More</a>
+                    </div>
+                </article>
+
+                <article class="blog-card" data-category="news">
+                    <div class="blog-image">
+                        <i class="fas fa-cog"></i>
+                    </div>
+                    <div class="blog-content">
+                        <div class="post-meta">
+                            <span class="post-date">December 25, 2023</span>
+                            <span class="post-category">Team News</span>
+                        </div>
+                        <h3>Server Rules Update</h3>
+                        <p>We've updated our server rules to ensure the best possible experience for all members. 
+                        The new guidelines emphasize tactical gameplay, communication, and respect for all players.</p>
+                        <div class="blog-tags">
+                            <span class="tag">Rules</span>
+                            <span class="tag">Update</span>
+                            <span class="tag">Community</span>
+                        </div>
+                        <a href="#" class="read-more">Read More</a>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- Blog Stats -->
+    <section class="blog-stats">
+        <div class="container">
+            <div class="stats-grid">
+                <div class="stat-item">
+                    <span class="stat-number">25+</span>
+                    <span class="stat-label">Articles Published</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-number">5</span>
+                    <span class="stat-label">Categories</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-number">150+</span>
+                    <span class="stat-label">Monthly Readers</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-number">Weekly</span>
+                    <span class="stat-label">Update Schedule</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Newsletter Signup -->
+    <section class="newsletter-signup">
+        <div class="container">
+            <div class="newsletter-content">
+                <h2>Stay Updated</h2>
+                <p>Subscribe to our newsletter for the latest team news, mission reports, and tactical guides.</p>
+                <form class="newsletter-form">
+                    <input type="email" placeholder="Enter your email" required>
+                    <button type="submit" class="btn btn-primary">Subscribe</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <img src="logo.webp" alt="BSMF Logo" class="footer-logo-img">
+                    <span>BSMF</span>
+                </div>
+                <div class="footer-links">
+                    <a href="index.html">Home</a>
+                    <a href="missions.html">Missions</a>
+                    <a href="gallery.html">Gallery</a>
+                    <a href="tactics.html">Tactics</a>
+                    <a href="blog.html">Blog</a>
+                </div>
+                <div class="footer-social">
+                    <a href="#discord"><i class="fab fa-discord"></i></a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 BSMF - Back Stabbing Mother Fuckers. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script>
+        // Blog filter functionality
+        document.querySelectorAll('.filter-btn').forEach(btn => {
+            btn.addEventListener('click', () => {
+                // Remove active class from all buttons
+                document.querySelectorAll('.filter-btn').forEach(b => b.classList.remove('active'));
+                // Add active class to clicked button
+                btn.classList.add('active');
+                
+                const filter = btn.getAttribute('data-filter');
+                const items = document.querySelectorAll('.blog-card');
+                
+                items.forEach(item => {
+                    if (filter === 'all' || item.getAttribute('data-category') === filter) {
+                        item.style.display = 'block';
+                        item.classList.add('fade-in-up');
+                    } else {
+                        item.style.display = 'none';
+                    }
+                });
+            });
+        });
+
+        // Newsletter form handling
+        const newsletterForm = document.querySelector('.newsletter-form');
+        if (newsletterForm) {
+            newsletterForm.addEventListener('submit', (e) => {
+                e.preventDefault();
+                const email = newsletterForm.querySelector('input[type="email"]').value;
+                showNotification('Thank you for subscribing!', 'success');
+                newsletterForm.reset();
+            });
+        }
+    </script>
+</body>
+</html> 

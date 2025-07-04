@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery - BSMF</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+                            <div class="nav-logo">
+                    <a href="index.html">
+                        <img src="logo.webp" alt="BSMF Logo" class="logo">
+                        <span class="logo-text">BSMF</span>
+                    </a>
+                </div>
+            <ul class="nav-menu">
+                <li><a href="index.html" class="nav-link">Home</a></li>
+                <li><a href="missions.html" class="nav-link">Missions</a></li>
+                <li><a href="gallery.html" class="nav-link active">Gallery</a></li>
+                <li><a href="tactics.html" class="nav-link">Tactics</a></li>
+                <li><a href="blog.html" class="nav-link">Blog</a></li>
+                <li><a href="index.html#contact" class="nav-link">Contact</a></li>
+            </ul>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="page-hero">
+        <div class="container">
+            <h1 class="page-title">Gallery</h1>
+            <p class="page-subtitle">Mission Screenshots & Team Photos</p>
+        </div>
+    </section>
+
+    <!-- Gallery Categories -->
+    <section class="gallery-categories">
+        <div class="container">
+            <div class="category-filters">
+                <button class="filter-btn active" data-filter="all">All Photos</button>
+                <button class="filter-btn" data-filter="missions">Missions</button>
+                <button class="filter-btn" data-filter="team">Team</button>
+                <button class="filter-btn" data-filter="events">Events</button>
+                <button class="filter-btn" data-filter="tactics">Tactics</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Grid -->
+    <section class="gallery-main">
+        <div class="container">
+            <div class="gallery-grid" id="galleryGrid">
+                <!-- Sample images - replace with actual images from your folder -->
+                <div class="gallery-item" data-category="tactics">
+                    <img src="images/hollyday_CQB.png" alt="CQB Training - Holiday" loading="lazy">
+                    <div class="gallery-overlay">
+                        <h3>CQB Training</h3>
+                        <p>Holiday CQB session</p>
+                        <span class="image-date">2024</span>
+                    </div>
+                </div>
+                <div class="gallery-item" data-category="missions">
+                    <img src="images/collect_Intel.png" alt="Collecting Intel" loading="lazy">
+                    <div class="gallery-overlay">
+                        <h3>Collecting Intel</h3>
+                        <p>Intel gathering mission</p>
+                        <span class="image-date">2024</span>
+                    </div>
+                </div>
+                <div class="gallery-item" data-category="missions">
+                    <img src="images/Mountain.png" alt="Mountain Operation" loading="lazy">
+                    <div class="gallery-overlay">
+                        <h3>Mountain Operation</h3>
+                        <p>High-altitude mission</p>
+                        <span class="image-date">2024</span>
+                    </div>
+                </div>
+                <div class="gallery-item" data-category="missions">
+                    <img src="images/Ship.png" alt="Ship Boarding" loading="lazy">
+                    <div class="gallery-overlay">
+                        <h3>Ship Boarding</h3>
+                        <p>Maritime operation</p>
+                        <span class="image-date">2024</span>
+                    </div>
+                </div>
+                <div class="gallery-item" data-category="tactics">
+                    <img src="images/Sniper.png" alt="Sniper Training" loading="lazy">
+                    <div class="gallery-overlay">
+                        <h3>Sniper Training</h3>
+                        <p>Long-range marksmanship</p>
+                        <span class="image-date">2024</span>
+                    </div>
+                </div>
+                <div class="gallery-item" data-category="tactics">
+                    <img src="images/Sniper_Roof.png" alt="Sniper on Roof" loading="lazy">
+                    <div class="gallery-overlay">
+                        <h3>Sniper on Roof</h3>
+                        <p>Overwatch position</p>
+                        <span class="image-date">2024</span>
+                    </div>
+                </div>
+                <div class="gallery-item" data-category="team">
+                    <img src="images/team1.jpg" alt="Team Formation" loading="lazy">
+                    <div class="gallery-overlay">
+                        <h3>Team Formation</h3>
+                        <p>BSMF operators in tactical gear</p>
+                        <span class="image-date">January 2024</span>
+                    </div>
+                </div>
+                <div class="gallery-item" data-category="events">
+                    <img src="images/event1.jpg" alt="Tactical Training" loading="lazy">
+                    <div class="gallery-overlay">
+                        <h3>Tactical Training</h3>
+                        <p>Team coordination exercise</p>
+                        <span class="image-date">January 2024</span>
+                    </div>
+                </div>
+                <div class="gallery-item" data-category="tactics">
+                    <img src="images/tactics1.jpg" alt="Room Clearing" loading="lazy">
+                    <div class="gallery-overlay">
+                        <h3>Room Clearing</h3>
+                        <p>Advanced CQB techniques</p>
+                        <span class="image-date">January 2024</span>
+                    </div>
+                </div>
+                <div class="gallery-item" data-category="missions">
+                    <img src="images/mission2.jpg" alt="Mountain Recon" loading="lazy">
+                    <div class="gallery-overlay">
+                        <h3>Mountain Recon</h3>
+                        <p>High-altitude surveillance</p>
+                        <span class="image-date">January 2024</span>
+                    </div>
+                </div>
+                <div class="gallery-item" data-category="team">
+                    <img src="images/team2.jpg" alt="Squad Photo" loading="lazy">
+                    <div class="gallery-overlay">
+                        <h3>Squad Photo</h3>
+                        <p>BSMF core team members</p>
+                        <span class="image-date">January 2024</span>
+                    </div>
+                </div>
+                <div class="gallery-item" data-category="events">
+                    <img src="images/event2.jpg" alt="Competition Day" loading="lazy">
+                    <div class="gallery-overlay">
+                        <h3>Competition Day</h3>
+                        <p>Accuracy and speed challenge</p>
+                        <span class="image-date">January 2024</span>
+                    </div>
+                </div>
+                <div class="gallery-item" data-category="tactics">
+                    <img src="images/tactics2.jpg" alt="Sniper Position" loading="lazy">
+                    <div class="gallery-overlay">
+                        <h3>Sniper Position</h3>
+                        <p>Long-range engagement setup</p>
+                        <span class="image-date">January 2024</span>
+                    </div>
+                </div>
+                <div class="gallery-item" data-category="missions">
+                    <img src="images/mission3.jpg" alt="Facility Raid" loading="lazy">
+                    <div class="gallery-overlay">
+                        <h3>Facility Raid</h3>
+                        <p>Multi-point entry operation</p>
+                        <span class="image-date">January 2024</span>
+                    </div>
+                </div>
+                <div class="gallery-item" data-category="team">
+                    <img src="images/team3.jpg" alt="Command Center" loading="lazy">
+                    <div class="gallery-overlay">
+                        <h3>Command Center</h3>
+                        <p>Mission planning session</p>
+                        <span class="image-date">January 2024</span>
+                    </div>
+                </div>
+                <div class="gallery-item" data-category="events">
+                    <img src="images/event3.jpg" alt="Fun Ops Night" loading="lazy">
+                    <div class="gallery-overlay">
+                        <h3>Fun Ops Night</h3>
+                        <p>Casual community event</p>
+                        <span class="image-date">January 2024</span>
+                    </div>
+                </div>
+                <div class="gallery-item" data-category="tactics">
+                    <img src="images/tactics3.jpg" alt="Breaching Demo" loading="lazy">
+                    <div class="gallery-overlay">
+                        <h3>Breaching Demo</h3>
+                        <p>Door entry techniques</p>
+                        <span class="image-date">January 2024</span>
+                    </div>
+                </div>
+                <div class="gallery-item" data-category="missions">
+                    <img src="images/mission4.jpg" alt="Maritime Op" loading="lazy">
+                    <div class="gallery-overlay">
+                        <h3>Maritime Operation</h3>
+                        <p>Ship boarding exercise</p>
+                        <span class="image-date">January 2024</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Stats -->
+    <section class="gallery-stats">
+        <div class="container">
+            <div class="stats-grid">
+                <div class="stat-item">
+                    <span class="stat-number">50+</span>
+                    <span class="stat-label">Mission Photos</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-number">25+</span>
+                    <span class="stat-label">Team Photos</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-number">15+</span>
+                    <span class="stat-label">Event Photos</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-number">30+</span>
+                    <span class="stat-label">Tactical Photos</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Admin Instructions -->
+    <section class="admin-instructions">
+        <div class="container">
+            <h2 class="section-title">Gallery Management</h2>
+            <div class="admin-content">
+                <div class="admin-card">
+                    <div class="admin-icon">
+                        <i class="fas fa-folder-open"></i>
+                    </div>
+                    <h3>How to Add Images</h3>
+                    <p>To add new images to the gallery:</p>
+                    <ol>
+                        <li>Create an <code>images</code> folder in your website directory</li>
+                        <li>Add your image files to the folder</li>
+                        <li>Update the gallery grid in <code>gallery.html</code></li>
+                        <li>Use the following format for each image:</li>
+                    </ol>
+                    <div class="code-example">
+                        <pre><code>&lt;div class="gallery-item" data-category="missions"&gt;
+    &lt;img src="images/your-image.jpg" alt="Description" loading="lazy"&gt;
+    &lt;div class="gallery-overlay"&gt;
+        &lt;h3&gt;Image Title&lt;/h3&gt;
+        &lt;p&gt;Image description&lt;/p&gt;
+        &lt;span class="image-date"&gt;Date&lt;/span&gt;
+    &lt;/div&gt;
+&lt;/div&gt;</code></pre>
+                    </div>
+                </div>
+                <div class="admin-card">
+                    <div class="admin-icon">
+                        <i class="fas fa-tags"></i>
+                    </div>
+                    <h3>Image Categories</h3>
+                    <p>Use these categories for organizing images:</p>
+                    <ul>
+                        <li><strong>missions</strong> - Mission screenshots and gameplay</li>
+                        <li><strong>team</strong> - Team photos and member shots</li>
+                        <li><strong>events</strong> - Community events and gatherings</li>
+                        <li><strong>tactics</strong> - Tactical demonstrations and training</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <img src="logo.webp" alt="BSMF Logo" class="footer-logo-img">
+                    <span>BSMF</span>
+                </div>
+                <div class="footer-links">
+                    <a href="index.html">Home</a>
+                    <a href="missions.html">Missions</a>
+                    <a href="gallery.html">Gallery</a>
+                    <a href="tactics.html">Tactics</a>
+                    <a href="blog.html">Blog</a>
+                </div>
+                <div class="footer-social">
+                    <a href="#discord"><i class="fab fa-discord"></i></a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 BSMF - Back Stabbing Mother Fuckers. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script>
+        // Gallery filter functionality
+        document.querySelectorAll('.filter-btn').forEach(btn => {
+            btn.addEventListener('click', () => {
+                // Remove active class from all buttons
+                document.querySelectorAll('.filter-btn').forEach(b => b.classList.remove('active'));
+                // Add active class to clicked button
+                btn.classList.add('active');
+                
+                const filter = btn.getAttribute('data-filter');
+                const items = document.querySelectorAll('.gallery-item');
+                
+                items.forEach(item => {
+                    if (filter === 'all' || item.getAttribute('data-category') === filter) {
+                        item.style.display = 'block';
+                        item.classList.add('fade-in-up');
+                    } else {
+                        item.style.display = 'none';
+                    }
+                });
+            });
+        });
+
+        // Image modal functionality
+        document.querySelectorAll('.gallery-item img').forEach(img => {
+            img.addEventListener('click', () => {
+                const src = img.src;
+                const alt = img.alt;
+                openImageModal(src, alt);
+            });
+        });
+    </script>
+</body>
+</html> 
