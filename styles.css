@@ -374,6 +374,12 @@ section,
     color: var(--text-light);
     border: 1px solid #444444;
     border-radius: 10px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.stat:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
 }
 
 .stat-number {
@@ -443,6 +449,7 @@ section,
 
 .member-card:hover {
     transform: translateY(-5px);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
 }
 
 .member-avatar {
@@ -485,7 +492,8 @@ section,
 }
 
 .rule-card:hover {
-    transform: translateY(-3px);
+    transform: translateY(-5px);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
 }
 
 .rule-icon {
@@ -566,7 +574,8 @@ section,
 }
 
 .preview-card:hover {
-    transform: translateY(-3px);
+    transform: translateY(-5px);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
 }
 
 .preview-card i {
@@ -1112,8 +1121,11 @@ section,
 
 .protocols-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    grid-template-columns: 1fr;
     gap: 2rem;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0;
 }
 
 .protocol-card {
@@ -1157,6 +1169,135 @@ section,
     color: var(--accent-color);
     position: absolute;
     left: 0;
+}
+
+/* Weapon Images in Protocol Cards */
+.weapon-image {
+    text-align: left;
+    margin-bottom: 1.5rem;
+    padding: 1rem;
+    background: rgba(255, 255, 255, 0.03);
+    border-radius: 8px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.weapon-img {
+    max-width: 100%;
+    height: auto;
+    max-height: 200px;
+    object-fit: contain;
+    border-radius: 6px;
+    transition: transform 0.3s ease;
+}
+
+.weapon-img:hover {
+    transform: scale(1.05);
+}
+
+/* Range Title Styling */
+.range-title {
+    font-size: 2rem;
+    text-align: left;
+    margin: 3rem 0 2rem 0;
+    color: var(--text-light);
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    position: relative;
+}
+
+.range-title::after {
+    content: '';
+    position: absolute;
+    bottom: -10px;
+    left: 0;
+    width: 80px;
+    height: 2px;
+    background: linear-gradient(90deg, var(--primary-color), var(--accent-color));
+}
+
+/* Adjust protocol card layout for weapons */
+.protocol-card:has(.weapon-image) {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    text-align: left;
+}
+
+.protocol-card:has(.weapon-image) h4 {
+    margin-bottom: 1rem;
+    color: var(--accent-color);
+    font-size: 1.3rem;
+}
+
+.protocol-card:has(.weapon-image) .protocol-content {
+    width: 100%;
+}
+
+.protocol-card:has(.weapon-image) .protocol-content ul {
+    text-align: left;
+}
+
+/* Weapon Card Layout */
+.weapon-card {
+    padding: 1rem;
+    margin: 0.5rem 0 1rem 1.5rem;
+}
+
+.weapon-layout {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    margin-top: 0;
+    min-height: 320px;
+    justify-content: left;
+}
+
+.weapon-layout .weapon-image {
+    flex: 0 0 400px;
+    margin-bottom: 0;
+    padding: 0.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.weapon-layout .weapon-img {
+    height: 320px;
+    width: auto;
+    object-fit: contain;
+    border-radius: 6px;
+    transition: transform 0.3s ease;
+}
+
+.weapon-layout .weapon-img:hover {
+    transform: scale(1.05);
+}
+
+.weapon-layout .protocol-content {
+    flex: 1;
+    text-align: left;
+    padding: 0.5rem 0;
+    margin-top: 0;
+}
+
+.weapon-layout .protocol-content h4 {
+    margin-bottom: 1.5rem;
+    color: var(--accent-color);
+    font-size: 1.3rem;
+}
+
+/* Responsive design for weapon cards */
+@media (max-width: 768px) {
+    .weapon-layout {
+        flex-direction: column;
+        gap: 1rem;
+    }
+    
+    .weapon-layout .weapon-image {
+        flex: none;
+        width: 100%;
+        max-width: 200px;
+    }
 }
 
 /* Advanced Tactics */
@@ -2093,4 +2234,27 @@ html {
 .footer-bottom p {
     color: var(--text-muted);
     font-size: 0.9rem;
+}
+
+/* Secondary Weapons - Smaller containers */
+.secondary-weapon .weapon-layout {
+    min-height: 200px;
+}
+
+.secondary-weapon .weapon-layout .weapon-image {
+    flex: 0 0 200px;
+    padding: 0.25rem;
+    width: 200px;
+    height: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.secondary-weapon .weapon-layout .weapon-img {
+    max-height: 180px;
+    max-width: 180px;
+    width: auto;
+    height: auto;
+    object-fit: contain;
 }
